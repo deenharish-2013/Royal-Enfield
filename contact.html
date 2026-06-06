@@ -69,10 +69,10 @@
     }
     .forms{
       background-color: grey;
-      width: 40%;
-      height: 500px;
-      margin-left: 4%;
-      padding: 5%;
+      width: 30%;
+      height: 400px;
+      margin-left: 1%;
+      padding: 1%;
       border-radius: 20px;
       text-align: left;
     }
@@ -80,11 +80,98 @@
       list-style-type: none;
       
     }
-    .img{
-      float: right;
-      margin-top: -33%;
-      margin-right: 4%;
+    .formimg{
+      display: flex;
+      justify-content: space-around;
     }
+        @media screen and (max-width:1200px) 
+    {
+          body{
+        overflow-x: hidden;
+        background-color: black ;
+    }
+    .forms{
+      width: 400px;
+      height: 400px;
+      margin-left: -5%;
+    }
+    img{
+      width: 400px;
+      height: 400px;
+      margin-left: -35%;
+    }
+  }
+
+        @media screen and (max-width:965px) 
+    {
+          body{
+        overflow-x: hidden;
+        background-color: black ;
+    }
+
+      .footer{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer2, ul, li{
+        padding-left: 15%;
+      }
+      .footer2 h3{
+        margin-left: -17%;
+      }
+            .footer3, ul, li{
+        padding-left: -15%;
+      }
+.footer3 ul li{
+        margin-left: -30%;
+      }
+       .formimg{
+        display: flex;
+        flex-direction: column;
+      }
+.forms, li{
+      width: 400px;
+      margin-left: 10%;
+      padding-right: 30%;
+}    
+img{
+  margin-left: 10%;
+}
+  }
+      @media screen and (max-width:600px) 
+    {
+          body{
+        overflow-x: hidden;
+        background-color: black ;
+    }
+
+      .footer{
+        display: flex;
+        flex-direction: column;
+      }
+      .footer2, ul, li{
+        padding-left: 15%;
+      }
+      .footer2 h3{
+        margin-left: -17%;
+      }
+            .footer3, ul, li{
+        padding-left: -15%;
+      }
+.footer3 ul li{
+        margin-left: -30%;
+      }
+      .formimg{
+        display: flex;
+        flex-direction: column;
+      }
+.forms{
+      width: 400px;
+      padding-top: 3%;
+}
+}
+
+
 </style>
 <body>
     <!--navbar-->
@@ -129,6 +216,7 @@
   <h1>Get in Touch</h1>
   <p>We’d love to hear from you. Kindly fill the form below.</p>
 </div>
+<div class="formimg">
 <div class="forms">
   <div data-aos="fade-right">
 <li><input type="text" name="" id="" placeholder="Your name"></li>
@@ -141,7 +229,8 @@
 
 <div class="img">
   <div data-aos="fade-left">
-  <img src="assets/photos/model.jpg" width="700px" height="500px" alt="">
+  <img src="assets/photos/model.jpg" width="600px" height="500px" alt="">
+</div>
 </div>
 </div>
 <!--foorter-->>
