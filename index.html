@@ -49,11 +49,11 @@
     display: flex;
     color: aliceblue;
 }
-.tex{
+.texx{
 position: relative;
-bottom: -150px;
+top: 100px;
 }
-.tex, button{
+.texx, button{
     border-radius: 20px;    
 }
 .footer{
@@ -64,14 +64,16 @@ bottom: -150px;
         color: white;
         font-size: medium;
 }
-    .footer2 ul li{
+    .footer2, ul, li{
         list-style: none;
-        margin-left: -50%;
+        
     }
+     
     .footer3 ul li{
         list-style: none;
-        margin-left: -10%;
+        padding-left: 0;
     }
+
 
         .last{
         text-align: center;
@@ -80,94 +82,111 @@ bottom: -150px;
         padding: 1%;
         margin-top: -2%;
     }
-                @media screen and (max-width:1200px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
-    }
-    .texx{
-      padding-top: 10%;
-    }
-  }
-            @media screen and (max-width:965px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+
+        @media screen and (max-width: 600px) {
+
+    /* Hero Section */
+    .hero{
+        padding: 50% 10%;
+        background-position: center;
+        background-size: cover;
     }
 
-        
-      .cardtext{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 600px;
-      }
-      .texx{
-        
-        padding-left: 5%;
-        margin-top: 10%;
-      }
-      img{
-        height: 250px;
-      }
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
+    .text{
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
     }
 
-    @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden ;
-        background-color: black ;
+    .text h1{
+        font-size: 28px;
     }
 
-        
-      .cardtext{
+    .hero button{
+        width: 100px;
+        padding: 8px;
+    }
+
+    /* Heading */
+    .text-danger{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    /* Bike Cards */
+    .card-group{
         display: flex;
         flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 15px;
+    }
+
+    .card img{
+        height: 220px !important;
+        object-fit: cover;
+    }
+
+    /* About Section */
+    .cardtext{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .cardtext img{
         width: 100%;
-      }
-      .texx{
-        margin-left: 0%;
-      }
-      img{
-        height: 250px;
-        width: 90%;
-        margin-left: 0%;
-      }
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
+        max-width: 350px;
+        height: auto;
     }
+
+    .texx{
+        position: static;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .texx h2{
+        font-size: 24px;
+    }
+
+    /* Footer */
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer2 ul,
+    .footer3 ul{
+        padding-left: 0;
+    }
+
+    .footer4 input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer4 button{
+        width: 100%;
+    }
+
+    .footer5 svg{
+        margin: 5px;
+    }
+
+    .last{
+        font-size: 14px;
+        padding: 10px;
+        margin-top: 0;
+    }
+}
+
+    
       
 </style>
 <body>
@@ -279,6 +298,7 @@ bottom: -150px;
 <p> Recent updates.</p> 
    <p class="text-black">Follow us: <a href="">Instagram</a> • <a href="">Facebook</a></p>
 </div>
+
 <div class="footer2">
     <h3 class="text-black">Shop</h3><br>
     <ul>
