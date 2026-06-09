@@ -75,91 +75,76 @@
     margin: 10%;  
     cursor: pointer; 
 }
-      @media screen and (max-width:1400px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+/* Mobile View - Up to 600px */
+@media screen and (max-width: 600px) {
+
+    .login{
+        flex-direction: column;
+        width: 95%;
+        margin: 10px auto;
+        padding: 15px;
+        text-align: center;
     }
 
-      .login{
-        display: flex;
-        flex-direction: row;
-        height: 800px;
-        width: 700px;
-        
-      }
-      .login1 img{
-        width: 270px;
-      }}
-        @media screen and (max-width:960px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .login img{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        border-radius: 15px;
     }
 
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-      .login{
-        display: flex;
-        flex-direction: row;
-        height: 775px;
-        width: 700px;
-        margin-left: 1%;
-        
-      }
-      .login1 img{
-        width: 270px;
-      }}
-   @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .login1,
+    .login2{
+        width: 100%;
+        margin: 0;
     }
 
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-      .login{
-        display: flex;
-        flex-direction: column;
-        height: 1250px;
-        width: 285px;
-        margin-left: 20%;
-      }
-      .login1 img{
-        width: 270px;
-      }} 
+    .login2{
+        margin-top: 20px;
+    }
 
+    .login2 input{
+        width: 90%;
+        padding: 8px;
+    }
+
+    .login2 button{
+        width: 80%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer2 ul li,
+    .footer3 ul li{
+        margin-left: -25px;
+    }
+
+    .footer input{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .footer button{
+        width: 50%;
+    }
+
+    .last{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .navbar-brand{
+        font-size: 20px;
+    }
+}
 </style>
 <body>
     <!--navbar-->

@@ -51,82 +51,94 @@
     .card{
       cursor: pointer;
     }
-        @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+  
+    @media screen and (max-width: 600px) {
+
+    /* Navbar */
+    .container-fluid {
+        padding: 10px;
     }
 
-        
-      .cardtext{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-      }
-      .tex{
-        padding-left: 5%;
-        padding-bottom:50%;
-        margin-bottom: 10%;
-      }
-      .img{
-        height: 250px;
-      }
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-    }
-        @media screen and (max-width:965px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .navbar-brand {
+        font-size: 20px;
+        margin-left: 0;
     }
 
-        
-      .cardtext{
+    /* Cards */
+    .card-group {
         display: flex;
         flex-direction: column;
-        width: 50%;
-      }
-      .tex{
-        padding-left: 5%;
-        padding-bottom:50%;
-        margin-bottom: 10%;
-      }
-      .img{
-        height: 250px;
-      }
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
+        gap: 15px;
     }
+
+    .card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3 {
+        width: 100%;
+    }
+
+    .footer2 ul li,
+    .footer3 ul li {
+        margin-left: -25px;
+        padding: 5px 0;
+    }
+
+    /* Newsletter */
+    .footer input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .footer button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Social Icons */
+    .footer svg {
+        margin: 5px;
+    }
+
+    /* Footer Bottom */
+    .last {
+        padding: 10px;
+        margin-top: 0;
+        font-size: 14px;
+    }
+
+    /* Hero Image */
+    img.img-fluid {
+        height: auto;
+    }
+  }
+       
 </style>
 <body>
     <!--navbar-->

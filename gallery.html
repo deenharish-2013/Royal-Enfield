@@ -57,55 +57,108 @@
     .card{
       cursor: pointer;
     }
-     @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+     /* Mobile View - Up to 600px */
+@media screen and (max-width: 600px) {
+
+    .container-fluid{
+        padding: 10px;
+        font-size: 14px;
     }
 
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-  }
-        @media screen and (max-width:965px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .navbar-brand{
+        font-size: 20px;
     }
 
-      .footer{
+    /* Logo */
+    .img img{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .name{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .name h1{
+        font-size: 28px;
+    }
+
+    /* Gallery Cards */
+    .card-group{
         display: flex;
         flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-     
-  }
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card img{
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title{
+        font-size: 18px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3{
+        width: 100%;
+    }
+
+    .footer2 ul,
+    .footer3 ul{
+        padding-left: 0;
+    }
+
+    .footer2 ul li,
+    .footer3 ul li{
+        margin-left: 0;
+        list-style: none;
+    }
+
+    /* Newsletter */
+    .footer input{
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .footer button{
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* Social Icons */
+    .footer svg{
+        margin: 5px;
+    }
+
+    .last{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 </style>
 <body>
     <!--navbar-->

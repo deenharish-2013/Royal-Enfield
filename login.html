@@ -73,91 +73,88 @@
     background-color: rgb(123, 139, 238);
     margin: 10%;  
     cursor: pointer; }
-   
-      @media screen and (max-width:1400px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+/* Mobile Responsive - Up to 600px */
+@media screen and (max-width: 600px) {
+
+    .container-fluid{
+        padding: 3%;
+        font-size: 14px;
     }
 
-      .login{
-        display: flex;
-        flex-direction: row;
-        height: 440px;
-        width: 700px;
-        
-      }
-      .login1 img{
-        width: 270px;
-      }}
-        @media screen and (max-width:960px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .navbar-brand{
+        font-size: 18px;
+        margin-left: 0;
     }
 
-      .footer{
-        display: flex;
+    .login{
         flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-      .login{
-        display: flex;
-        flex-direction: row;
-        height: 440px;
-        width: 600px;
-        justify-content: space-evenly;
-        margin-left: 0%;
-      }
-      .login1 img{
-        width: 270px;
-      }}
-   @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+        text-align: center;
+        border-radius: 15px;
     }
 
-      .footer{
-        display: flex;
+    .login1 img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .login2{
+        margin: 20px 0 0 0;
+    }
+
+    .login2 h2{
+        font-size: 28px;
+    }
+
+    .login2 input{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .login2 button{
+        width: 100%;
+        margin: 15px 0;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .footer{
         flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-      .login{
-        display: flex;
-        flex-direction: column;
-        height: 820px;
-        width: 285px;
-        justify-content: center;
-      }
-      .login1 img{
-        width: 270px;
-      }} 
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer2 ul li,
+    .footer3 ul li{
+        margin-left: -25px;
+    }
+
+    .footer input{
+        width: 90%;
+        margin-bottom: 10px;
+        padding: 8px;
+    }
+
+    .footer button{
+        width: 90%;
+        padding: 8px;
+    }
+
+    .last{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    svg{
+        margin: 5px;
+    }
+}    
 </style>
 <body>
     <!--navbar-->
@@ -219,7 +216,7 @@
 <footer class="footer">
 <div class="footer1">
 <h3 class="text-black">Royal Enfield</h3><br>
-<p>Crete endless history, running successfully for more than 10 decades</p>
+<p>Create endless history, running successfully for more than 10 decades</p>
 <p> Recent updates.</p> 
    <p class="text-black">Follow us: <a href="">Instagram</a> • <a href="">Facebook</a></p>
 </div>
@@ -246,7 +243,7 @@
     <P>Phone:+91 9962032034</P>
     <p>Email: Support@royalenfield.com</p>
     <h5 class="text-black">Newsleter</h5>
-    <input type="text" placeholder="Email address"><button>Subscrribe</button>
+    <input type="text" placeholder="Email address"><button>Subscribe</button>
 </div>
 <div>
     <h3 class="text-black">Keep in touch</h3><br>

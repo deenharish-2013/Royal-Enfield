@@ -64,16 +64,12 @@ top: 100px;
         color: white;
         font-size: medium;
 }
-    .footer2, ul, li{
-        list-style: none;
-        padding-left: 0;
-    }
+.footer2 ul li,
+.footer3 ul li {
+    list-style: none;
+    padding-left: 0;
+}
      
-    .footer3 ul li{
-        list-style: none;
-        padding-left: 0;
-    }
-
 
         .last{
         text-align: center;
@@ -82,122 +78,132 @@ top: 100px;
         padding: 1%;
         margin-top: -2%;
     }
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+         body {
+        overflow-x: hidden;
+    }
 
-        @media screen and (max-width: 600px) {
+
+    /* Navbar */
+    .container-fluid {
+        padding: 3%;
+        font-size: 14px;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
 
     /* Hero Section */
-.hero{
-        padding: 30px 15px 200px 15px;
+    .hero {
+        padding: 35% 8%;
         background-position: center;
         background-size: cover;
-        display: flex;
-        align-items: flex-start;
     }
 
-    .text{
-        margin-top: 0;
+    .text {
+         
+        margin-top: 10;
         margin-left: 0;
-        width: 100%;
         text-align: center;
-        color: white;
+        font-size: 14px;
+        color: orangered;
     }
 
-    .text h1{
+    .text h1 {
         font-size: 28px;
-        margin-bottom: 10px;
     }
 
-    .text p{
-        font-size: 14px;
-        line-height: 1.5;
-    }
-
-    .hero button{
-        width: 120px;
+    .hero button {
+        width: 100px;
         padding: 8px;
-        font-size: 14px;
     }
-
 
     /* Heading */
-    .text-danger{
-        font-size: 24px;
+    h1.text-danger {
         text-align: center;
+        font-size: 24px;
     }
 
-    /* Bike Cards */
-    .card-group{
+    /* Card Group */
+    .card-group {
         display: flex;
         flex-direction: column;
     }
 
-    .card{
+    .card {
         margin-bottom: 15px;
     }
 
-    .card img{
-        height: 220px !important;
-        object-fit: cover;
+    .card img {
+        height: auto;
+        width: 100%;
     }
 
     /* About Section */
-    .cardtext{
+    .cardtext {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        padding: 15px;
+        padding: 10px;
     }
 
-    .cardtext img{
+    .img img {
         width: 100%;
-        max-width: 350px;
         height: auto;
     }
 
-    .texx{
-        position: static;
+    .texx {
+        top: 0;
         margin-top: 20px;
-        padding: 0 10px;
+        padding: 10px;
     }
 
-    .texx h2{
+    .texx h2 {
         font-size: 24px;
     }
 
+    .texx p {
+        font-size: 14px;
+    }
+
     /* Footer */
-    .footer{
+    .footer {
         flex-direction: column;
         text-align: center;
         gap: 20px;
         padding: 20px;
     }
 
+    .footer1,
+    .footer2,
+    .footer3,
+    .footer4,
+    .footer5 {
+        width: 100%;
+    }
+
     .footer2 ul,
-    .footer3 ul{
+    .footer3 ul {
         padding-left: 0;
     }
 
-    .footer4 input{
-        width: 100%;
+    .footer4 input {
+        width: 90%;
         margin-bottom: 10px;
     }
 
-    .footer4 button{
+    .footer4 button {
         width: 100%;
+        margin-top: 5px;
     }
 
-    .footer5 svg{
-        margin: 5px;
-    }
-
-    .last{
-        font-size: 14px;
-        padding: 10px;
+    .last {
         margin-top: 0;
+        padding: 10px;
+        font-size: 14px;
     }
-  }  
-
-    
+}
       
 </style>
 <body>
@@ -257,7 +263,7 @@ top: 100px;
 <div class="card-group mt-3">
   <div class="card">
     <div data-aos="fade-right">
-    <img src="assets/photos/bike1.jpg" height="300px" class="card-img-top" alt="...">
+    <img src="assets/photos/bike1.jpg" height="300px" class="card-img-top" alt="bike">
     <div class="card-body">
       <h5 class="card-title">Thunderbird X</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -267,7 +273,7 @@ top: 100px;
   </div>
   <div class="card">
     <div data-aos="fade-top">
-    <img src="assets/photos/bike2.jpg" height="300px" class="card-img-top" alt="...">
+    <img src="assets/photos/bike2.jpg" height="300px" class="card-img-top" alt="bike">
     <div class="card-body">
       <h5 class="card-title">Classic 500</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -277,7 +283,7 @@ top: 100px;
   </div>
   <div class="card">
     <div data-aos="fade-left">
-    <img src="assets/photos/bike3.jpg" height="300px" class="card-img-top" alt="...">
+    <img src="assets/photos/bike3.jpg" height="300px" class="card-img-top" alt="bike">
     <div class="card-body">
       <h5 class="card-title">Continental GT</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>

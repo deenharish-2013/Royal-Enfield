@@ -53,55 +53,98 @@
       font-size: larger;
       cursor: pointer;
     }
-   @media screen and (max-width:600px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    @media screen and (max-width: 600px){
+
+    /* Navbar */
+    .container-fluid{
+        padding: 10px;
     }
 
-      .footer{
-        display: flex;
-        flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-  }
-        @media screen and (max-width:965px) 
-    {
-          body{
-        overflow-x: hidden;
-        background-color: black ;
+    .navbar-brand{
+        font-size: 20px;
+        margin-left: 0;
     }
 
-      .footer{
+    /* Service Heading */
+    .service h1{
+        font-size: 28px;
+    }
+
+    .service p{
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    /* Cards */
+    .card-group{
         display: flex;
         flex-direction: column;
-      }
-      .footer2, ul, li{
-        padding-left: 15%;
-      }
-      .footer2 h3{
-        margin-left: -17%;
-      }
-            .footer3, ul, li{
-        padding-left: -15%;
-      }
-.footer3 ul li{
-        margin-left: -30%;
-      }
-     
-  }
+        gap: 20px;
+    }
+
+    .card{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .card img{
+        width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .card-title{
+        font-size: 20px;
+    }
+
+    .card-text{
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer1,
+    .footer2,
+    .footer3{
+        width: 100%;
+    }
+
+    .footer2 ul li,
+    .footer3 ul li{
+        margin-left: -25px;
+        padding: 5px 0;
+    }
+
+    /* Newsletter */
+    .footer input[type="text"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .footer button{
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Social Icons */
+    .footer svg{
+        margin: 5px;
+    }
+
+    /* Copyright Section */
+    .last{
+        margin-top: 0;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
 </style>
 <body>
     <!--navbar-->
@@ -148,7 +191,7 @@
 </div>
 <div class="card-group p-3">
   <div class="card">
-    <img src="assets/photos/service.jpg"card-img-top" height="400px" alt="...">
+    <img src="assets/photos/service.jpg"card-img-top" height="400px" alt="Service">
     <div class="card-body">
       <h5 class="card-title text-white">Bike Service</h5>
       <p class="card-text">Professional maintenance and repair services to keep your ride smooth and safe.</p>
@@ -156,14 +199,14 @@
     </div>
   </div>
   <div class="card">
-    <img src="assets/photos/spare.jpg" class="card-img-top" height="400px" alt="...">
+    <img src="assets/photos/spare.jpg" class="card-img-top" height="400px" alt="Service">
     <div class="card-body">
       <h5 class="card-title text-white">Spare Parts</h5>
       <p class="card-text">Genuine and high-quality spare parts for all types of motorbikes.</p>
     </div>
   </div>
   <div class="card">
-    <img src="assets/photos/gears.jpg" class="card-img-top" height="400px" alt="...">
+    <img src="assets/photos/gears.jpg" class="card-img-top" height="400px" alt="Service">
     <div class="card-body">
       <h5 class="card-title text-white">Riding Gears</h5>
       <p class="card-text">Premium helmets, jackets, gloves, and other biking essentials.</p>
